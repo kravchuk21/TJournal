@@ -4,7 +4,7 @@ import styles from './SideComments.module.scss'
 
 interface CommentItemProps {
     user: {
-        fullname: string;
+        fullName: string;
         id: number
     };
     text: string;
@@ -23,7 +23,7 @@ export const CommentItem: React.FC<CommentItemProps> = ({user, text, post}) => {
                     alt="User Avatar"/>
                 <Link href={'/profile/' + user.id}>
                     <a>
-                        <b>{user.fullname}</b>
+                        <b>{user.fullName}</b>
                     </a>
                 </Link>
             </div>

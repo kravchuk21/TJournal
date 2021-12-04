@@ -19,7 +19,7 @@ export const SideComments = () => {
                 Комментарии <ArrowRightIcon/>
             </h3>
             {visible && data.comments.popular.map((obj) => (
-                <CommentItem key={obj.id} {...obj} />
+                <CommentItem key={obj.id} text={obj.text} user={obj.user} post={obj.post}/>
             ))}
         </div>
     )
